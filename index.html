@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Celebrity Matcher</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Celebrity Matcher</h1>
+        <h2>Answer questions to find your celebrity soulmate</h2>
+      </div>
+      <div class="profile">
+        <form>
+          <h4>Your gender:</h4>
+          <select class="form-control" id="gender">
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+          </select>
+          <p></p>
+          <h4>Your age:</h4>
+          <select class="form-control" id="age">
+            <option value="17">under 18</option>
+            <option value="23">18 - 25</option>
+            <option value="30">26 - 39</option>
+            <option value="41">40+</option>
+          </select>
+          <p></p>
+          <h4>Your favorite color:</h4>
+          <select class="form-control" id="color">
+            <option value="0">Blue</option>
+            <option value="1">Green</option>
+            <option value="2">Red</option>
+            <option value="3">Pink Camo</option>
+          </select>
+          <p></p>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <p></p>
+      <div class="well results">
+        <h3>Your soulmate:</h3>
+        <p></p>
+        <div>
+          <h3 id="celeb-name"></h3>
+          <p id="celeb-reason"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
