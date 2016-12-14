@@ -5,16 +5,20 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css" media="all" />
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Celebrity Matcher</title>
+    <title>Political Bent</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Celebrity Matcher</h1>
-        <h2>Answer questions to find your celebrity soulmate</h2>
+        <h1>Political Bent</h1>
+        <h2>Answer simple questions to give you complex answers:</h2>
       </div>
       <div class="profile">
         <form>
+          <div class="form-group">
+            <label for="name">Your name:</label>
+            <input id="name" class="form-control" type="text" />
+          </div>
           <h4>Your gender:</h4>
           <select class="form-control" id="gender">
             <option value="0">Male</option>
@@ -29,12 +33,15 @@
             <option value="41">40+</option>
           </select>
           <p></p>
-          <h4>Your favorite color:</h4>
+          <h4>Your favorite Supreme Court justice:</h4>
           <select class="form-control" id="color">
-            <option value="0">Blue</option>
-            <option value="1">Green</option>
-            <option value="2">Red</option>
-            <option value="3">Pink Camo</option>
+            <option value="0">Anthony Kennedy</option>
+            <option value="1">Clarence Thomas</option>
+            <option value="2">Ruth Bader Ginsburg</option>
+            <option value="3">Stephen Breyer</option>
+            <option value="4">Samuel Alito</option>
+            <option value="5">Sonia Sotomayor</option>
+            <option value="6">Elena Kagan</option>
           </select>
           <p></p>
           <button type="submit" class="btn">Submit</button>
@@ -42,11 +49,11 @@
       </div>
       <p></p>
       <div class="well results">
-        <h3>Your soulmate:</h3>
+        <h3>Your political leaning:</h3>
         <p></p>
         <div>
-          <h3 id="celeb-name"></h3>
-          <p id="celeb-reason"></p>
+          <h3 id="political-name"></h3>
+          <p id="political-reason"></p>
         </div>
       </div>
     </div>
