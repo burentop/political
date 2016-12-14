@@ -15,12 +15,13 @@
       </div>
       <div class="profile">
         <form>
-          <div class="form-group">
+          <div class="form-group input-name">
             <label for="name">Your name:</label>
             <input id="name" class="form-control" type="text" />
+            <span id="name-warning" class="help-block"></span>
           </div>
           <h4>Your gender:</h4>
-          <select class="form-control" id="gender">
+          <select class="form-control input-gender" id="gender">
             <option value="0">Male</option>
             <option value="1">Female</option>
           </select>
@@ -34,7 +35,7 @@
           </select>
           <p></p>
           <h4>Your favorite Supreme Court justice:</h4>
-          <select class="form-control" id="color">
+          <select class="form-control" id="justice">
             <option value="0">Anthony Kennedy</option>
             <option value="1">Clarence Thomas</option>
             <option value="2">Ruth Bader Ginsburg</option>
