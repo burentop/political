@@ -11,20 +11,20 @@ $(document).ready(function () {
       $("#name-warning").text("Please enter your name.");
     } else {
       if (age < 18) {
-        $("#political-name").text("Homework");
-        $("#political-reason").text("You should really just be focused on school right now!");
-      } else if (color === 3) {
-        $("#political-name").text("Pee Wee Herman");
-        $("#political-reason").text("Pink Camo is a very weird color - so Pee Wee seems like a valid choice.")
-      } else if (gender === 0) {
-        $("#political-name").text("Jennifer Aniston");
-        $("#political-reason").text("All guys like Jennifer, right?");
-      } else {
-        $("#political-name").text("Chris Pratt");
-        $("#political-reason").text("I hear Chris is all the rage these days.")
-      }
+        $("#political-name").text("Snot-nosed Crybaby");
+        $("#political-reason").text("I'm sorry, but your generation is all about me, me, me! Spells trouble for the future of our country.");
+    } else if (justice > 3) {
+        $("#political-name").text("Violent Liberal");
+        $("#political-reason").text("It's obvious from your Supreme Court preference that you're no fan of justice at all.")
+    } else if (justice > 1) {
+        $("#political-name").text("Hippie");
+        $("#political-reason").text("You have some redeemability, but not much common sense.");
+    } else {
+        $("#political-name").text("Rational Individual");
+        $("#political-reason").text("I honestly have no way of knowing what your political leanings are, based on these simple questions, but you seem relatively reasonable.")
+    }
 
-      $(".results").show();
+    $(".results").show();
     }
     
   });
